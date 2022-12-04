@@ -25,7 +25,6 @@ public class SearchTest {
 		
 		WebElement firstLink = driver.findElement(By.xpath("(//div[@class='ofy7ae'])[1]"));
 		String actualText = firstLink.getText();
-		System.out.println(actualText);
 		String expectedText = "FIFA World Cup Qatar 2022™";
 		Assert.assertTrue(actualText.equalsIgnoreCase(expectedText), 
 				"Expected" + expectedText + "but found >>" + actualText);
